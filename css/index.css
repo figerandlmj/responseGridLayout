@@ -1,0 +1,95 @@
+header{
+	color:#47a3da;
+	text-align: center;
+}
+header span{
+	display: block;
+	margin-top: 40px;
+	font-size: 14px;
+}
+header h1{
+	margin-top: 10px;
+}
+.main{
+	margin-top:80px;
+}
+.main .grid li{
+	float: left;
+	width: 33.33%;
+	height: 420px;
+	text-align: center;
+}
+.main .grid a{
+	display: block;
+	height: 100%;
+	color: #47a3da;
+	transition: background .2s;
+}
+.main .grid .grid-icon{
+	display: block;
+	padding-top:30px;
+	transition:transform .2s,color .2s;
+}
+.main .grid i{
+	font-size: 130px;
+}
+.main .grid .grid-title{
+	position: relative;
+	margin:20px 0 10px;
+	padding-top:20px;
+	font-size: 30px;
+	transition:all .2s;
+}
+.main .grid .grid-title:before{
+	position: absolute;
+	top:0;
+	left:50%;
+	width: 160px;
+	height:2px;
+	margin-left: -80px;
+	content: "";
+	background: #47a3da;
+}
+.main .grid .category{
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	transform:translateY(10px);
+	transition: transform .3s,opacity .2s;
+}
+.main .grid a:hover{
+	background: #47a3da;
+}
+.main .grid a:hover .grid-icon{
+	color: #fff;
+	transform:translateY(10px);
+}
+.main .grid a:hover .grid-title{
+	color: #fff;
+	transform: translateY(-30px);
+}
+.main .grid a:hover .grid-title:before{
+	margin-top:80px;
+	background: #fff;
+}
+.main .grid a:hover .category{
+	opacity: 1;
+	transform: translateY(0);
+}
+/* >=1000 像素时*/
+/*@media screen and (min-width: 1000px){
+	body{
+		background: #f00;
+	}
+}*/
+/* <=1000 像素时*/
+@media screen and (max-width: 1000px){
+	.main .grid li{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 640px){
+	.main .grid li{
+		width: 100%;
+	}
+}
